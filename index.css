@@ -324,10 +324,10 @@
   -webkit-column-gap: 10px;
           column-gap: 10px;
   row-gap: 10px;
-  -ms-grid-columns: (100px)[7];
-      grid-template-columns: repeat(7, 100px);
-  -ms-grid-rows: (100px)[4];
-      grid-template-rows: repeat(4, 100px);
+  -ms-grid-columns: (90px)[7];
+      grid-template-columns: repeat(7, 90px);
+  -ms-grid-rows: (90px)[4];
+      grid-template-rows: repeat(4, 90px);
 }
 
 .wrapper .card__item-1 {
@@ -363,9 +363,6 @@
   .wrapper .welcome-section__row {
     margin: 30px auto;
   }
-}
-
-@media (max-width: 690px) {
   .wrapper .card__row ul {
     -ms-grid-columns: (90px)[4];
         grid-template-columns: repeat(4, 90px);
@@ -388,9 +385,6 @@
   .wrapper .search__input input {
     width: 120px;
   }
-}
-
-@media (max-width: 425px) {
   .wrapper .card__row ul {
     -ms-grid-columns: (90px)[3];
         grid-template-columns: repeat(3, 90px);
