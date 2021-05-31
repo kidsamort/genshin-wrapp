@@ -420,9 +420,6 @@
   .wrapper .menu-nav__list li:nth-last-child(-n + 2) {
     display: none;
   }
-  .wrapper .category__list-weapons li {
-    display: none;
-  }
   .wrapper .welcome-section__left,
   .wrapper .welcome-section__right {
     display: none;
@@ -442,12 +439,21 @@
   }
 }
 
+@media (max-width: 682px) {
+  .wrapper .category__row {
+    margin: 0;
+  }
+}
+
 @media (max-width: 620px) {
   .wrapper .card__row ul {
     -ms-grid-columns: (90px)[4];
         grid-template-columns: repeat(4, 90px);
     -ms-grid-rows: (90px)[7];
         grid-template-rows: repeat(7, 90px);
+  }
+  .wrapper .category__list-weapons li {
+    display: none;
   }
 }
 

@@ -311,10 +311,6 @@
       display: none;
     }
 
-    .category__list-weapons li {
-      display: none;
-    }
-
     .welcome-section__left,
     .welcome-section__right {
       display: none;
@@ -332,10 +328,19 @@
       grid-template-rows: repeat(5, 90px);
     }
   }
+  @media (max-width: 682px) {
+    .category__row {
+      margin: 0;
+    }
+  }
+
   @media (max-width: 620px) {
     .card__row ul {
       grid-template-columns: repeat(4, 90px);
       grid-template-rows: repeat(7, 90px);
+    }
+    .category__list-weapons li {
+      display: none;
     }
   }
 
