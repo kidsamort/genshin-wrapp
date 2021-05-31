@@ -294,7 +294,7 @@
   }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 425px) {
   .wrapper .filter__type,
   .wrapper .menu-nav__auth li:nth-last-child(2) {
     display: none;
