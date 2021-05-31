@@ -1,0 +1,36 @@
+.content {
+  width: 100%;
+  font-family: 'Gilroy';
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.filter {
+  font-size: 16px;
+}
+
+.filter__body {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.filter__grid ul {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px) {
+  .filter__body {
+    max-width: 350px;
+  }
+  .filter__grid ul {
+    grid-template-columns: repeat(3, 120px);
+  }
+}
+
+.filter__list li {
+  padding: 10px;
+}
+
+.filter__image {
+  background: url(icon.svg);
+}
