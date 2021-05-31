@@ -328,6 +328,12 @@
       margin: 30px auto;
     }
     .card__row ul {
+      grid-template-columns: repeat(6, 90px);
+      grid-template-rows: repeat(5, 90px);
+    }
+  }
+  @media (max-width: 620px) {
+    .card__row ul {
       grid-template-columns: repeat(4, 90px);
       grid-template-rows: repeat(7, 90px);
     }

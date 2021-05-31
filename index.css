@@ -435,6 +435,15 @@
     margin: 30px auto;
   }
   .wrapper .card__row ul {
+    -ms-grid-columns: (90px)[6];
+        grid-template-columns: repeat(6, 90px);
+    -ms-grid-rows: (90px)[5];
+        grid-template-rows: repeat(5, 90px);
+  }
+}
+
+@media (max-width: 620px) {
+  .wrapper .card__row ul {
     -ms-grid-columns: (90px)[4];
         grid-template-columns: repeat(4, 90px);
     -ms-grid-rows: (90px)[7];
