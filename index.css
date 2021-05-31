@@ -448,7 +448,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 30px;
+  margin: 50px;
   margin-bottom: 50px;
 }
 
@@ -458,7 +458,6 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 30px 0;
   min-width: 500px;
 }
 
