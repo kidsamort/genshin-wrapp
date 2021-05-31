@@ -182,7 +182,7 @@
     &__row {
       display: flex;
       justify-content: space-between;
-      margin: 0 30px;
+      margin: 30px;
       align-items: center;
     }
     &__heding {
@@ -199,8 +199,38 @@
     }
   }
 
+  .category {
+    font-size: 16px;
+
+    &__row {
+      margin: 0 30px;
+      display: flex;
+      justify-content: center;
+      ul {
+        display: inline-grid;
+
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    &__list-elemental,
+    &__list-weapons {
+      li {
+        padding: 5px;
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 690px) {
+  }
   @media (max-width: 768px) {
     .menu-nav__list li:nth-last-child(-n + 2) {
+      display: none;
+    }
+
+    .category__list-weapons li {
       display: none;
     }
 
@@ -228,10 +258,18 @@
     .menu-nav__auth li:nth-last-child(2) {
       display: none;
     }
-    input {
-      width: 120px;
+    .search__input {
+      input {
+        width: 120px;
+      }
     }
   }
   @media (max-width: 375px) {
+    .heding-section__row {
+      min-width: 260px;
+    }
+    .category__row .category__list-elemental {
+      grid-template-columns: repeat(3, 96px);
+    }
   }
 }
