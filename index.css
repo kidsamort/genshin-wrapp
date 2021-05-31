@@ -183,6 +183,7 @@
 }
 
 .wrapper .search__input input {
+  width: 150px;
   color: white;
   margin-left: 10px;
   background-color: rgba(0, 0, 0, 0);
@@ -294,7 +295,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   .wrapper .filter__type,
   .wrapper .menu-nav__auth li:nth-last-child(2) {
     display: none;
