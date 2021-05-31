@@ -22,7 +22,7 @@
     margin: 30px;
   }
   .container {
-    max-width: 750px;
+    max-width: 1024px;
     margin: 0px auto;
     position: relative;
   }
@@ -199,15 +199,16 @@
 
   .category {
     font-size: 16px;
-
     &__row {
-      margin: 0 30px;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: nowrap;
       ul {
-        display: inline-grid;
-
+        display: grid;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(3, 1fr);
       }
     }
@@ -224,8 +225,6 @@
       margin-left: 30px;
 
       img {
-        margin-left: 10px;
-
         height: 25px;
         width: 25px;
         background-color: #292a33;
@@ -328,9 +327,6 @@
       grid-template-columns: repeat(7, 90px);
       grid-template-rows: repeat(4, 90px);
     }
-    .container {
-      max-width: 650px;
-    }
   }
 
   @media (max-width: 767px) {
@@ -375,6 +371,9 @@
     .category__list-weapons li {
       display: none;
     }
+    .category__row {
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 424px) {
@@ -397,9 +396,6 @@
   @media (max-width: 375px) {
     .heding-section__row {
       min-width: 260px;
-    }
-    .category__row .category__list-elemental {
-      grid-template-columns: repeat(3, 96px);
     }
   }
 }

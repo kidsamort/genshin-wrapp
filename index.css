@@ -34,7 +34,7 @@
 }
 
 .wrapper .container {
-  max-width: 750px;
+  max-width: 1024px;
   margin: 0px auto;
   position: relative;
 }
@@ -282,7 +282,7 @@
 }
 
 .wrapper .category__row {
-  margin: 0 30px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,11 +292,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .wrapper .category__row ul {
-  display: -ms-inline-grid;
-  display: inline-grid;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -314,7 +322,6 @@
 }
 
 .wrapper .category__list-weapons img {
-  margin-left: 10px;
   height: 25px;
   width: 25px;
   background-color: #292a33;
@@ -439,9 +446,6 @@
     -ms-grid-rows: (90px)[4];
         grid-template-rows: repeat(4, 90px);
   }
-  .wrapper .container {
-    max-width: 650px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -489,6 +493,12 @@
   .wrapper .category__list-weapons li {
     display: none;
   }
+  .wrapper .category__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 424px) {
@@ -510,10 +520,6 @@
 @media (max-width: 375px) {
   .wrapper .heding-section__row {
     min-width: 260px;
-  }
-  .wrapper .category__row .category__list-elemental {
-    -ms-grid-columns: (96px)[3];
-        grid-template-columns: repeat(3, 96px);
   }
 }
 /*# sourceMappingURL=index.css.map */
