@@ -328,10 +328,83 @@
       grid-template-rows: repeat(4, 90px);
 }
 
-.wrapper .card__item-1 {
+.wrapper .card__item-1,
+.wrapper .card .person {
   height: 100%;
   background-color: #292a33;
   border-radius: 10px;
+}
+
+.wrapper .person__row {
+  padding: 5px;
+}
+
+.wrapper .person__row .person__list {
+  width: 80px;
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33.33%)[3];
+      grid-template-columns: repeat(3, 33.33%);
+  -ms-grid-rows: (33.33%)[3];
+      grid-template-rows: repeat(3, 33.33%);
+  justify-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 0;
+}
+
+.wrapper .person__item-1 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.wrapper .person__item-2 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.wrapper .person__item-3 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.wrapper .person__item-4 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 @media (max-width: 768px) {
