@@ -4,6 +4,13 @@
   font-size: 16px;
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url(./font/Gilroy-Regular.eot);
+  font-weight: normal;
+  font-style: normal;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -300,9 +307,6 @@
   .wrapper .menu-nav__auth li:nth-last-child(2) {
     display: none;
   }
-}
-
-@media (max-width: 375px) {
   .wrapper input {
     width: 120px;
   }
