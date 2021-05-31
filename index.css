@@ -1,14 +1,12 @@
 * {
   list-style: none;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy2';
   font-size: 16px;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url(./font/Gilroy-Regular.eot);
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Gilroy2';
+  src: url(./font/Gilroy-Regular.woff);
 }
 
 .wrapper {
